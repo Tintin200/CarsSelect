@@ -9,7 +9,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,39 +22,46 @@ class _MyHomePageState extends State<MyHomePage> {
           children: const [
             DrawerHeader(
               decoration: BoxDecoration(
-                color : Colors.deepPurple,
+                color: Colors.deepPurple,
               ),
               child: Text('CarSelect'),
             ),
           ],
         ),
       ),
-    );
-  }
-}
-
-class ElevatedButtonExample  extends StatefulWidget{
-  const ElevatedButtonExample({super.key});
-  @override
-  State<ElevatedButtonExample> createState() => _ElevatedButtonExampleState();
-}
-
-class _ElevatedButtonExampleState extends State<ElevatedButtonExample> {
-  @override
-  Widget build(BuildContext context) {
-    final ButtonStyle style = ElevatedButton.styleFrom(
-      textStyle: const TextStyle(fontSize: 20),
-    );
-    return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        children: <Widget>[
+      body: Center(
+        child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
           ElevatedButton(
-            style: style,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/france');
+            },
             child: const Text('France'),
           ),
+          const Padding(padding: EdgeInsets.all(10)),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/allemagne');
+            },
+            child: const Text('Allemagne'),
+          ),
+          const Padding(padding: EdgeInsets.all(10)),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/italie');
+            },
+            child: const Text('Italie'),
+          ),
+          const Padding(padding: EdgeInsets.all(10)),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/angleterre');
+            },
+            child: const Text('Angleterre'),
+          ),
         ],
+        ),
       ),
     );
   }

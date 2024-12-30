@@ -1,6 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:myapp/france.dart';
+import 'package:myapp/italie.dart';
+import 'package:myapp/allemagne.dart';
+import 'package:myapp/angleterre.dart';
 import 'package:myapp/myhomepage.dart';
 
 class MyApp extends StatelessWidget {
@@ -8,12 +12,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'CarSelect',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       home: const SplashHomePage(title: 'CarSelect'),
+      routes :{
+      '/france': (BuildContext context) => const France(title: "France"),
+      '/allemagne' : (BuildContext context) => const Allemagne(title: "Allemagne"),
+      '/italie': (BuildContext context) => const Italie(title: "Italie"),
+      '/angleterre': (BuildContext context) => const Angleterre(title: "Angleterre"),
+      }
     );
   }
 }
