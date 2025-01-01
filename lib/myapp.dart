@@ -5,7 +5,7 @@ import 'package:myapp/france.dart';
 import 'package:myapp/italie.dart';
 import 'package:myapp/allemagne.dart';
 import 'package:myapp/angleterre.dart';
-import 'package:myapp/myhomepage.dart';
+import 'package:myapp/accueil.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

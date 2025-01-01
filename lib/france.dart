@@ -16,6 +16,92 @@ class _FranceState extends State<France> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
+      body: Center(
+        child: Column( 
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset("assets/images/france.png", width: 150, height: 85,),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Alpine')), 
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {}, 
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Bugatti')),
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {}, 
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Citroen')),
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {}, 
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('DS Automobiles')),
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {}, 
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Peugeot')),
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {}, 
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Renault')),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
