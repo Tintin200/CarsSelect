@@ -16,6 +16,105 @@ class _AllemagneState extends State<Allemagne> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
+      body: Center(
+        child: Column( 
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset("assets/images/allemagne.png", width: 150, height: 85,),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Audi')), 
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('BMW')), 
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Mercedes-Benz')), 
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Opel')), 
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Porsche')), 
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Smart')), 
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Volkswagen')), 
+                ),
+              ),
+            ),
+          ]
+        ),
+      )
     );
   }
 }
