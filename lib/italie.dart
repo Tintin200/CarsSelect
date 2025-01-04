@@ -16,10 +16,12 @@ class _ItalieState extends State<Italie> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
+      body: SingleChildScrollView(
+      child: Center(
         child: Column( 
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const SizedBox(height: 20,),
             Image.asset("assets/images/italie.png", width: 150, height: 85,),
             const SizedBox(height: 20),
             Card(
@@ -125,9 +127,10 @@ class _ItalieState extends State<Italie> {
                 ),
               ),
             ),
-          ]
-        )
-      )
+          ],
+        ),
+      ),
+      ),
     );
   }
 }
