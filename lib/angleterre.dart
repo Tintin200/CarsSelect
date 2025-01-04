@@ -48,6 +48,83 @@ class _AngleterreState extends State<Angleterre> {
               ),
             ),
             const SizedBox(height: 20,),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Jaguar')), 
+                ),
+              ),
+            ),
+            const SizedBox(height: 20,),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Land Rover')), 
+                ),
+              ),
+            ),
+            const SizedBox(height: 20,),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Lotus')), 
+                ),
+              ),
+            ),
+            const SizedBox(height: 20,),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('McLaren')), 
+                ),
+              ),
+            ),
+            const SizedBox(height: 20,),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Mini')), 
+                ),
+              ),
+            ),
+            const SizedBox(height: 20,),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              child: InkWell(
+                splashColor: Colors.blue.withAlpha(30),
+                onTap: () {},
+                child: const SizedBox(
+                  width: 350,
+                  height: 50,
+                  child: Center(child: Text('Rolls-Royce')), 
+                ),
+              ),
+            ),
           ],
         ),
       ),
