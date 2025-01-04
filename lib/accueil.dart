@@ -19,13 +19,40 @@ class _MyHomePageState extends State<MyHomePage> {
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
-          children: const [
-            DrawerHeader(
+          children: [
+            const DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.deepPurple,
               ),
               child: Text('CarSelect'),
             ),
+            ListTile(
+              title: const Text('France'),
+              onTap: () {
+                Navigator.pushNamed(context, '/france');
+              },
+            ),
+            ListTile(
+              title: const Text('Allemagne'),
+              onTap: () {
+                Navigator.pushNamed(context, '/allemagne');
+              },
+            ),
+            ListTile(
+              title: const Text('Italie'),
+              onTap: () {
+                Navigator.pushNamed(context, '/italie');
+              },
+            ),
+            ListTile(
+              title: const Text('Angleterre'),
+              onTap: () {
+                Navigator.pushNamed(context, '/angleterre');
+              },
+            ),
+            const Text(
+              "@ 2025 CarSelect",
+            )
           ],
         ),
       ),
