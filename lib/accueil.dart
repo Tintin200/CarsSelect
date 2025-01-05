@@ -50,8 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.pushNamed(context, '/angleterre');
               },
             ),
+            const SizedBox(height: 305),
             const Text(
-              "@ 2025 CarSelect",
+              "@ 2025 CarSelect Mougou Ayman",
             )
           ],
         ),

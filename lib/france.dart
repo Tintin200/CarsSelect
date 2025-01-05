@@ -28,7 +28,9 @@ class _FranceState extends State<France> {
               clipBehavior: Clip.hardEdge,
               child: InkWell(
                 splashColor: Colors.blue.withAlpha(30),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/fr/alpine');
+                },
                 child: const SizedBox(
                   width: 350,
                   height: 50,

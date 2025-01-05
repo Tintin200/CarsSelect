@@ -5,6 +5,7 @@ import 'package:myapp/france.dart';
 import 'package:myapp/italie.dart';
 import 'package:myapp/allemagne.dart';
 import 'package:myapp/angleterre.dart';
+import 'package:myapp/fr/alpine.dart';
 import 'package:myapp/accueil.dart';
 
 class MyApp extends StatelessWidget {
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       '/allemagne' : (BuildContext context) => const Allemagne(title: "Allemagne"),
       '/italie': (BuildContext context) => const Italie(title: "Italie"),
       '/angleterre': (BuildContext context) => const Angleterre(title: "Angleterre"),
+      '/fr/alpine': (BuildContext context) => const Alpine(title: "Alpine"),
       }
     );
   }
