@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             const SizedBox(height: 305),
             const Text(
-              "@ 2025 CarSelect Mougou Ayman",
+              "@ 2025 CarSelect",
             )
           ],
         ),
