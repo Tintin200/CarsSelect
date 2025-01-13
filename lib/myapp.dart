@@ -6,6 +6,11 @@ import 'package:myapp/italie.dart';
 import 'package:myapp/allemagne.dart';
 import 'package:myapp/angleterre.dart';
 import 'package:myapp/fr/alpine.dart';
+import 'package:myapp/fr/bugatti.dart';
+import 'package:myapp/fr/citroen.dart';
+import 'package:myapp/fr/ds.dart';
+import 'package:myapp/fr/peugeot.dart';
+import 'package:myapp/fr/renault.dart';
 import 'package:myapp/accueil.dart';
 
 class MyApp extends StatelessWidget {
@@ -26,6 +31,8 @@ class MyApp extends StatelessWidget {
       '/italie': (BuildContext context) => const Italie(title: "Italie"),
       '/angleterre': (BuildContext context) => const Angleterre(title: "Angleterre"),
       '/fr/alpine': (BuildContext context) => const Alpine(title: "Alpine"),
+      '/fr/bugatti': (BuildContext context) => const Bugatti(title: "Bugatti"),
+      '/fr/citroen': (BuildContext context) => const Citroen(title: "Citroen"),
       }
     );
   }

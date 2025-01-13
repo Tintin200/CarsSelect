@@ -24,7 +24,10 @@ class _AlpineState extends State<Alpine> {
               const SizedBox(height: 20,),
               Image.asset("assets/images/fr/alpine.png", width: 150, height: 85,),
               const SizedBox(height: 20,),
-              const Text("Alpine est une marque française emblématique qui a marqué l’histoire du sport automobile par ses voitures légères et innovantes. Après un déclin, elle renaît avec succès sous l'égide de Renault, avec une vision tournée vers l’avenir électrique et la compétition.")
+              const Text(
+                "Alpine est une marque française emblématique qui a marqué l’histoire du sport automobile par ses voitures légères et innovantes. Après un déclin, elle renaît avec succès sous l'égide de Renault, avec une vision tournée vers l’avenir électrique et la compétition.",
+                textAlign: TextAlign.center,
+                )
             ],
           ),
         ),
