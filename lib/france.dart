@@ -73,7 +73,9 @@ class _FranceState extends State<France> {
               clipBehavior: Clip.hardEdge,
               child: InkWell(
                 splashColor: Colors.blue.withAlpha(30),
-                onTap: () {}, 
+                onTap: () {
+                  Navigator.pushNamed(context, '/fr/ds');
+                }, 
                 child: const SizedBox(
                   width: 350,
                   height: 50,
@@ -86,7 +88,9 @@ class _FranceState extends State<France> {
               clipBehavior: Clip.hardEdge,
               child: InkWell(
                 splashColor: Colors.blue.withAlpha(30),
-                onTap: () {}, 
+                onTap: () {
+                  Navigator.pushNamed(context, '/fr/peugeot');
+                }, 
                 child: const SizedBox(
                   width: 350,
                   height: 50,
@@ -99,7 +103,9 @@ class _FranceState extends State<France> {
               clipBehavior: Clip.hardEdge,
               child: InkWell(
                 splashColor: Colors.blue.withAlpha(30),
-                onTap: () {}, 
+                onTap: () {
+                  Navigator.pushNamed(context, '/fr/renault');
+                }, 
                 child: const SizedBox(
                   width: 350,
                   height: 50,

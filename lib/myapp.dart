@@ -33,6 +33,9 @@ class MyApp extends StatelessWidget {
       '/fr/alpine': (BuildContext context) => const Alpine(title: "Alpine"),
       '/fr/bugatti': (BuildContext context) => const Bugatti(title: "Bugatti"),
       '/fr/citroen': (BuildContext context) => const Citroen(title: "Citroen"),
+      '/fr/ds': (BuildContext context) => const DS(title: "DS"),
+      '/fr/peugeot': (BuildContext context) => const Peugeot(title: "Peugeot"),
+      '/fr/renault': (BuildContext context) => const Renault(title: "Renault"),
       }
     );
   }
