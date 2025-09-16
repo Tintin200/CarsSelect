@@ -21,12 +21,18 @@ class _AudiState extends State<Audi> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox
+            const SizedBox(height: 20,),
+            Image.asset("assets/images/de/audi.png", width: 150, height: 90,),
+            const SizedBox(height: 20,),
+            const Text(
+              "data",
+              textAlign: TextAlign.center,
+            )
           ],
         ),
       ),
     ),
-    ),
-  )
+    );
+  
   }
 }
