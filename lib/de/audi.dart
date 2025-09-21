@@ -22,10 +22,10 @@ class _AudiState extends State<Audi> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const SizedBox(height: 20,),
-            Image.asset("assets/images/de/audi.png", width: 150, height: 90,),
+            Image.asset("/assets/images/de/audi.png", width: 150, height: 90,),
             const SizedBox(height: 20,),
             const Text(
-              "data",
+              "Audi est une marque automobile allemande haut de gamme, fondée en 1909 et intégrée au groupe Volkswagen. Elle est reconnue pour son design élégant, sa technologie innovante (notamment la transmission intégrale quattro) et son positionnement premium, alliant performance, confort et prestige.",
               textAlign: TextAlign.center,
             )
           ],

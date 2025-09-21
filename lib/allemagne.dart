@@ -43,7 +43,8 @@ class _AllemagneState extends State<Allemagne> {
               clipBehavior: Clip.hardEdge,
               child: InkWell(
                 splashColor: Colors.blue.withAlpha(30),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/de/bmw');                },
                 child: const SizedBox(
                   width: 350,
                   height: 50,
@@ -56,7 +57,9 @@ class _AllemagneState extends State<Allemagne> {
               clipBehavior: Clip.hardEdge,
               child: InkWell(
                 splashColor: Colors.blue.withAlpha(30),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/de/mercedes');
+                },
                 child: const SizedBox(
                   width: 350,
                   height: 50,
@@ -69,7 +72,9 @@ class _AllemagneState extends State<Allemagne> {
               clipBehavior: Clip.hardEdge,
               child: InkWell(
                 splashColor: Colors.blue.withAlpha(30),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/de/opel');
+                },
                 child: const SizedBox(
                   width: 350,
                   height: 50,
@@ -82,7 +87,9 @@ class _AllemagneState extends State<Allemagne> {
               clipBehavior: Clip.hardEdge,
               child: InkWell(
                 splashColor: Colors.blue.withAlpha(30),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/de/porsche');
+                },
                 child: const SizedBox(
                   width: 350,
                   height: 50,
@@ -95,7 +102,9 @@ class _AllemagneState extends State<Allemagne> {
               clipBehavior: Clip.hardEdge,
               child: InkWell(
                 splashColor: Colors.blue.withAlpha(30),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/de/smart');
+                },
                 child: const SizedBox(
                   width: 350,
                   height: 50,
@@ -108,7 +117,9 @@ class _AllemagneState extends State<Allemagne> {
               clipBehavior: Clip.hardEdge,
               child: InkWell(
                 splashColor: Colors.blue.withAlpha(30),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/de/volkswagen');
+                },
                 child: const SizedBox(
                   width: 350,
                   height: 50,

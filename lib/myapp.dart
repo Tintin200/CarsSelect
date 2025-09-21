@@ -1,17 +1,28 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+
+import 'package:myapp/accueil.dart';
+// Pays
 import 'package:myapp/france.dart';
 import 'package:myapp/italie.dart';
 import 'package:myapp/allemagne.dart';
 import 'package:myapp/angleterre.dart';
+// France
 import 'package:myapp/fr/alpine.dart';
 import 'package:myapp/fr/bugatti.dart';
 import 'package:myapp/fr/citroen.dart';
 import 'package:myapp/fr/ds.dart';
 import 'package:myapp/fr/peugeot.dart';
 import 'package:myapp/fr/renault.dart';
-import 'package:myapp/accueil.dart';
+// Allemagne
+import 'package:myapp/de/audi.dart';
+import 'package:myapp/de/bmw.dart';
+import 'package:myapp/de/mercedes.dart';
+import 'package:myapp/de/opel.dart';
+import 'package:myapp/de/porsche.dart';
+import 'package:myapp/de/smart.dart';
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -26,16 +37,23 @@ class MyApp extends StatelessWidget {
       ),
       home: const SplashHomePage(title: 'CarSelect'),
       routes :{
+      // Pays
       '/france': (BuildContext context) => const France(title: "France"),
       '/allemagne' : (BuildContext context) => const Allemagne(title: "Allemagne"),
       '/italie': (BuildContext context) => const Italie(title: "Italie"),
       '/angleterre': (BuildContext context) => const Angleterre(title: "Angleterre"),
+      // France
       '/fr/alpine': (BuildContext context) => const Alpine(title: "Alpine"),
       '/fr/bugatti': (BuildContext context) => const Bugatti(title: "Bugatti"),
       '/fr/citroen': (BuildContext context) => const Citroen(title: "Citroen"),
       '/fr/ds': (BuildContext context) => const DS(title: "DS"),
       '/fr/peugeot': (BuildContext context) => const Peugeot(title: "Peugeot"),
       '/fr/renault': (BuildContext context) => const Renault(title: "Renault"),
+      // Allemagne
+      '/de/audi': (BuildContext context) => const Audi(title: "Audi"),
+      '/de/bmw': (BuildContext context) => const Bmw(title: "Bmw"),
+      '/de/mercedes': (BuildContext context) => const Mercedes(title: "Mercedes"),
+      '/de/opel': (BuildContext context) => const Opel(title: "Opel"),
       }
     );
   }
