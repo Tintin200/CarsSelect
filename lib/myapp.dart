@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import 'package:myapp/accueil.dart';
+import 'package:myapp/de/volkswagen.dart';
 // Pays
 import 'package:myapp/france.dart';
 import 'package:myapp/italie.dart';
@@ -54,6 +55,9 @@ class MyApp extends StatelessWidget {
       '/de/bmw': (BuildContext context) => const Bmw(title: "Bmw"),
       '/de/mercedes': (BuildContext context) => const Mercedes(title: "Mercedes"),
       '/de/opel': (BuildContext context) => const Opel(title: "Opel"),
+      '/de/porsche': (BuildContext context) => const Porsche(title: "Porsche"),
+      '/de/smart': (BuildContext context) => const Smart(title: "Smart"),
+      '/de/volkswagen': (BuildContext context) => const Volkswagen(title: "Volkswagen"),
       }
     );
   }
