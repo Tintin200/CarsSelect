@@ -81,7 +81,7 @@ class _AllemagneState extends State<Allemagne> {
                   child: Center(child: Text('Opel')), 
                 ),
               ),
-            ),
+            ), 
             const SizedBox(height: 20),
             Card(
               clipBehavior: Clip.hardEdge,

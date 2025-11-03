@@ -23,43 +23,59 @@ import 'package:myapp/de/mercedes.dart';
 import 'package:myapp/de/opel.dart';
 import 'package:myapp/de/porsche.dart';
 import 'package:myapp/de/smart.dart';
-
+//Italie
+import 'package:myapp/it/abarth.dart';
+import 'package:myapp/it/alfa.dart';
+import 'package:myapp/it/ferrari.dart';
+import 'package:myapp/it/fiat.dart';
+import 'package:myapp/it/lamborghini.dart';
+import 'package:myapp/it/lancia.dart';
+import 'package:myapp/it/maserati.dart';
+import 'package:myapp/it/pagani.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'CarSelect',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const SplashHomePage(title: 'CarSelect'),
-      routes :{
-      // Pays
-      '/france': (BuildContext context) => const France(title: "France"),
-      '/allemagne' : (BuildContext context) => const Allemagne(title: "Allemagne"),
-      '/italie': (BuildContext context) => const Italie(title: "Italie"),
-      '/angleterre': (BuildContext context) => const Angleterre(title: "Angleterre"),
-      // France
-      '/fr/alpine': (BuildContext context) => const Alpine(title: "Alpine"),
-      '/fr/bugatti': (BuildContext context) => const Bugatti(title: "Bugatti"),
-      '/fr/citroen': (BuildContext context) => const Citroen(title: "Citroen"),
-      '/fr/ds': (BuildContext context) => const DS(title: "DS"),
-      '/fr/peugeot': (BuildContext context) => const Peugeot(title: "Peugeot"),
-      '/fr/renault': (BuildContext context) => const Renault(title: "Renault"),
-      // Allemagne
-      '/de/audi': (BuildContext context) => const Audi(title: "Audi"),
-      '/de/bmw': (BuildContext context) => const Bmw(title: "Bmw"),
-      '/de/mercedes': (BuildContext context) => const Mercedes(title: "Mercedes"),
-      '/de/opel': (BuildContext context) => const Opel(title: "Opel"),
-      '/de/porsche': (BuildContext context) => const Porsche(title: "Porsche"),
-      '/de/smart': (BuildContext context) => const Smart(title: "Smart"),
-      '/de/volkswagen': (BuildContext context) => const Volkswagen(title: "Volkswagen"),
-      }
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'CarSelect',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
+        home: const SplashHomePage(title: 'CarSelect'),
+        routes: {
+          // Pays
+          '/france': (BuildContext context) => const France(title: "France"),
+          '/allemagne': (BuildContext context) => const Allemagne(title: "Allemagne"),
+          '/italie': (BuildContext context) => const Italie(title: "Italie"),
+          '/angleterre': (BuildContext context) => const Angleterre(title: "Angleterre"),
+          // France
+          '/fr/alpine': (BuildContext context) => const Alpine(title: "Alpine"),
+          '/fr/bugatti': (BuildContext context) => const Bugatti(title: "Bugatti"),
+          '/fr/citroen': (BuildContext context) => const Citroen(title: "Citroen"),
+          '/fr/ds': (BuildContext context) => const DS(title: "DS"),
+          '/fr/peugeot': (BuildContext context) => const Peugeot(title: "Peugeot"),
+          '/fr/renault': (BuildContext context) => const Renault(title: "Renault"),
+          // Allemagne
+          '/de/audi': (BuildContext context) => const Audi(title: "Audi"),
+          '/de/bmw': (BuildContext context) => const Bmw(title: "Bmw"),
+          '/de/mercedes': (BuildContext context) => const Mercedes(title: "Mercedes"),
+          '/de/opel': (BuildContext context) => const Opel(title: "Opel"),
+          '/de/porsche': (BuildContext context) => const Porsche(title: "Porsche"),
+          '/de/smart': (BuildContext context) => const Smart(title: "Smart"),
+          '/de/volkswagen': (BuildContext context) => const Volkswagen(title: "Volkswagen"),
+          //Italie
+          '/it/abarth': (BuildContext context) => const Abarth(title: "Abarth"),
+          '/it/alfa': (BuildContext context) => const Alfa(title: "Alfa"),
+          '/it/ferrari': (BuildContext context) => const Ferrari(title: "Ferrari"),
+          '/it/fiat': (BuildContext context) => const Fiat(title: "Fiat"),
+          '/it/lamborghini': (BuildContext context) => const Lamborghini(title: "Lamborghini"),
+          'it/lancia': (BuildContext context) => const Lancia(title: "Lancia"),
+          'it/maserati': (BuildContext context) => const Maserati(title: "Maserati"),
+          'it/pagani': (BuildContext context) => const Pagani(title: "Pagani"),
+        });
   }
 }
 
@@ -77,14 +93,15 @@ class _SplashHomePageState extends State<SplashHomePage> {
   void initState() {
     super.initState();
     Timer(
-      const Duration(seconds : 2),
+      const Duration(seconds: 2),
       () => Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => const MyHomePage(title: "CarSelect"),)
-      ),
+          context,
+          MaterialPageRoute(
+            builder: (context) => const MyHomePage(title: "CarSelect"),
+          )),
     );
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -92,8 +109,10 @@ class _SplashHomePageState extends State<SplashHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget> [
-            Image.asset("assets/images/cars.png",),
+          children: <Widget>[
+            Image.asset(
+              "assets/images/cars.png",
+            ),
             const CircularProgressIndicator(color: Colors.white),
           ],
         ),
@@ -101,5 +120,3 @@ class _SplashHomePageState extends State<SplashHomePage> {
     );
   }
 }
-
-
