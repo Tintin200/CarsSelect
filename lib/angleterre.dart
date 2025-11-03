@@ -32,7 +32,9 @@ class _AngleterreState extends State<Angleterre> {
                 clipBehavior: Clip.hardEdge,
                 child: InkWell(
                   splashColor: Colors.blue.withAlpha(30),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/uk/aston');
+                  },
                   child: const SizedBox(
                     width: 350,
                     height: 50,
@@ -45,7 +47,9 @@ class _AngleterreState extends State<Angleterre> {
                 clipBehavior: Clip.hardEdge,
                 child: InkWell(
                   splashColor: Colors.blue.withAlpha(30),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/uk/bentley');
+                  },
                   child: const SizedBox(
                     width: 350,
                     height: 50,
@@ -58,7 +62,9 @@ class _AngleterreState extends State<Angleterre> {
                 clipBehavior: Clip.hardEdge,
                 child: InkWell(
                   splashColor: Colors.blue.withAlpha(30),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/uk/jaguar');
+                  },
                   child: const SizedBox(
                     width: 350,
                     height: 50,
@@ -71,7 +77,9 @@ class _AngleterreState extends State<Angleterre> {
                 clipBehavior: Clip.hardEdge,
                 child: InkWell(
                   splashColor: Colors.blue.withAlpha(30),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/uk/land');
+                  },
                   child: const SizedBox(
                     width: 350,
                     height: 50,
@@ -84,7 +92,9 @@ class _AngleterreState extends State<Angleterre> {
                 clipBehavior: Clip.hardEdge,
                 child: InkWell(
                   splashColor: Colors.blue.withAlpha(30),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/uk/lotus');
+                  },
                   child: const SizedBox(
                     width: 350,
                     height: 50,
@@ -97,7 +107,9 @@ class _AngleterreState extends State<Angleterre> {
                 clipBehavior: Clip.hardEdge,
                 child: InkWell(
                   splashColor: Colors.blue.withAlpha(30),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/uk/mclaren');
+                  },
                   child: const SizedBox(
                     width: 350,
                     height: 50,
@@ -110,7 +122,9 @@ class _AngleterreState extends State<Angleterre> {
                 clipBehavior: Clip.hardEdge,
                 child: InkWell(
                   splashColor: Colors.blue.withAlpha(30),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/uk/mini');
+                  },
                   child: const SizedBox(
                     width: 350,
                     height: 50,
@@ -123,7 +137,9 @@ class _AngleterreState extends State<Angleterre> {
                 clipBehavior: Clip.hardEdge,
                 child: InkWell(
                   splashColor: Colors.blue.withAlpha(30),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/uk/rolls');
+                  },
                   child: const SizedBox(
                     width: 350,
                     height: 50,

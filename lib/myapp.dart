@@ -32,6 +32,15 @@ import 'package:myapp/it/lamborghini.dart';
 import 'package:myapp/it/lancia.dart';
 import 'package:myapp/it/maserati.dart';
 import 'package:myapp/it/pagani.dart';
+//Grande-Bretagne
+import 'package:myapp/uk/aston.dart';
+import 'package:myapp/uk/bentley.dart';
+import 'package:myapp/uk/jaguar.dart';
+import 'package:myapp/uk/land.dart';
+import 'package:myapp/uk/lotus.dart';
+import 'package:myapp/uk/mclaren.dart';
+import 'package:myapp/uk/mini.dart';
+import 'package:myapp/uk/rolls.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -75,6 +84,15 @@ class MyApp extends StatelessWidget {
           'it/lancia': (BuildContext context) => const Lancia(title: "Lancia"),
           'it/maserati': (BuildContext context) => const Maserati(title: "Maserati"),
           'it/pagani': (BuildContext context) => const Pagani(title: "Pagani"),
+          //Grande-Bretagne
+          '/uk/aston': (BuildContext context) => const Aston(title: "Aston"),
+          '/uk/bentley': (BuildContext context) => const Bentley(title: "Bentley"),
+          '/uk/jaguar': (BuildContext context) => const Jaguar(title: "Jaguar"),
+          '/uk/land': (BuildContext context) => const Land(title: "Land"),
+          '/uk/lotus': (BuildContext context) => const Lotus(title: "Lotus"),
+          '/uk/mclaren': (BuildContext context) => const McLaren(title: "McLaren"),
+          '/uk/mini': (BuildContext context) => const Mini(title: "Mini"),
+          '/uk/rolls': (BuildContext context) => const Rolls(title: "Rolls"),
         });
   }
 }
