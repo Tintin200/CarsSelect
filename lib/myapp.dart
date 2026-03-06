@@ -1,9 +1,6 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
+import 'package:myapp/splash_screen.dart';
 
-import 'package:myapp/accueil.dart';
-import 'package:myapp/de/volkswagen.dart';
 // Pays
 import 'package:myapp/france.dart';
 import 'package:myapp/italie.dart';
@@ -23,6 +20,7 @@ import 'package:myapp/de/mercedes.dart';
 import 'package:myapp/de/opel.dart';
 import 'package:myapp/de/porsche.dart';
 import 'package:myapp/de/smart.dart';
+import 'package:myapp/de/volkswagen.dart';
 //Italie
 import 'package:myapp/it/abarth.dart';
 import 'package:myapp/it/alfa.dart';
@@ -53,7 +51,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const SplashHomePage(title: 'CarSelect'),
+        home: const SplashScreen(),
         routes: {
           // Pays
           '/france': (BuildContext context) => const France(title: "France"),
@@ -81,9 +79,9 @@ class MyApp extends StatelessWidget {
           '/it/ferrari': (BuildContext context) => const Ferrari(title: "Ferrari"),
           '/it/fiat': (BuildContext context) => const Fiat(title: "Fiat"),
           '/it/lamborghini': (BuildContext context) => const Lamborghini(title: "Lamborghini"),
-          'it/lancia': (BuildContext context) => const Lancia(title: "Lancia"),
-          'it/maserati': (BuildContext context) => const Maserati(title: "Maserati"),
-          'it/pagani': (BuildContext context) => const Pagani(title: "Pagani"),
+          '/it/lancia': (BuildContext context) => const Lancia(title: "Lancia"),
+          '/it/maserati': (BuildContext context) => const Maserati(title: "Maserati"),
+          '/it/pagani': (BuildContext context) => const Pagani(title: "Pagani"),
           //Grande-Bretagne
           '/uk/aston': (BuildContext context) => const Aston(title: "Aston"),
           '/uk/bentley': (BuildContext context) => const Bentley(title: "Bentley"),
@@ -94,47 +92,5 @@ class MyApp extends StatelessWidget {
           '/uk/mini': (BuildContext context) => const Mini(title: "Mini"),
           '/uk/rolls': (BuildContext context) => const Rolls(title: "Rolls"),
         });
-  }
-}
-
-class SplashHomePage extends StatefulWidget {
-  const SplashHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<SplashHomePage> createState() => _SplashHomePageState();
-}
-
-class _SplashHomePageState extends State<SplashHomePage> {
-  @override
-  void initState() {
-    super.initState();
-    Timer(
-      const Duration(seconds: 2),
-      () => Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const MyHomePage(title: "CarSelect"),
-          )),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.deepPurple,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            Image.asset(
-              "assets/images/cars.png",
-            ),
-            const CircularProgressIndicator(color: Colors.white),
-          ],
-        ),
-      ),
-    );
   }
 }

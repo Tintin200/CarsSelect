@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class Accueil extends StatefulWidget {
+  const Accueil({super.key, required this.title});
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<Accueil> createState() => _AccueilState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _AccueilState extends State<Accueil> {
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,36 +67,36 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          ElevatedButton(
-            onPressed: () {
-              Navigator.pushNamed(context, '/france');
-            },
-            child: const Text('France'),
-          ),
-          const Padding(padding: EdgeInsets.all(10)),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.pushNamed(context, '/allemagne');
-            },
-            child: const Text('Allemagne'),
-          ),
-          const Padding(padding: EdgeInsets.all(10)),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.pushNamed(context, '/italie');
-            },
-            child: const Text('Italie'),
-          ),
-          const Padding(padding: EdgeInsets.all(10)),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.pushNamed(context, '/angleterre');
-            },
-            child: const Text('Angleterre'),
-          ),
-        ],
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/france');
+              },
+              child: const Text('France'),
+            ),
+            const Padding(padding: EdgeInsets.all(10)),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/allemagne');
+              },
+              child: const Text('Allemagne'),
+            ),
+            const Padding(padding: EdgeInsets.all(10)),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/italie');
+              },
+              child: const Text('Italie'),
+            ),
+            const Padding(padding: EdgeInsets.all(10)),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/angleterre');
+              },
+              child: const Text('Angleterre'),
+            ),
+          ],
         ),
       ),
     );
