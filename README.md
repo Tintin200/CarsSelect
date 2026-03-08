@@ -13,12 +13,6 @@ Une application mobile **Flutter** qui référence les marques automobiles europ
 |:---:|:---:|:---:|:---:|
 | ![Splash](screenshots/splash.png) | ![Accueil](screenshots/accueil.png) | ![Pays](screenshots/pays.png) | ![Marque](screenshots/marque.png) |
 
-> 💡 **Pour ajouter vos screenshots :**
-> 1. Créez un dossier `screenshots/` à la racine du projet
-> 2. Faites des captures depuis votre émulateur ou appareil
-> 3. Nommez-les `splash.png`, `accueil.png`, `pays.png`, `marque.png`
-> 4. Remplacez les chemins dans le tableau ci-dessus
-
 ---
 
 ## ✨ Fonctionnalités
