@@ -1,4 +1,3 @@
-
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -63,15 +62,15 @@ class _SplashScreenState extends State<SplashScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: _background,
-      body: SafeArea(
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            // ── Contenu central (logo + titre + bouton) ──
-            SlideTransition(
-              position: _slideAnim,
-              child: FadeTransition(
-                opacity: _fadeAnim,
+      body: Stack(
+        alignment: Alignment.center,
+        children: [
+          // ── Contenu central (logo + titre + bouton) ──
+          SlideTransition(
+            position: _slideAnim,
+            child: FadeTransition(
+              opacity: _fadeAnim,
+              child: SizedBox.expand(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -97,7 +96,6 @@ class _SplashScreenState extends State<SplashScreen>
                     const Text(
                       'MARQUES EUROPÉENNES',
                       style: TextStyle(
-                      
                         fontSize: 11,
                         fontWeight: FontWeight.w200,
                         letterSpacing: 4,
@@ -129,25 +127,28 @@ class _SplashScreenState extends State<SplashScreen>
                 ),
               ),
             ),
+          ),
 
-            // ── Mention bas de page ──
-            Positioned(
-              bottom: 32,
-              child: FadeTransition(
-                opacity: _fadeAnim,
-                child: const Text(
-                  '65 MARQUES RÉFÉRENCÉES',
-                  style: TextStyle(
-                    fontSize: 10,
-                    letterSpacing: 3,
-                    fontWeight: FontWeight.w200,
-                    color: _greyLight,
-                  ),
+          // ── Mention bas de page ──
+          Positioned(
+            bottom: 32,
+            left: 0,
+            right: 0,
+            child: FadeTransition(
+              opacity: _fadeAnim,
+              child: const Text(
+                '65 MARQUES RÉFÉRENCÉES',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 10,
+                  letterSpacing: 3,
+                  fontWeight: FontWeight.w200,
+                  color: _greyLight,
                 ),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
