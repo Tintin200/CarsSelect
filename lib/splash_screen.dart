@@ -76,12 +76,12 @@ class _SplashScreenState extends State<SplashScreen>
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     // Logo volant
-                    _SteeringWheelIcon(size: 72),
+                    const _SteeringWheelIcon(size: 72),
 
                     const SizedBox(height: 32),
 
                     // Titre
-                    Text(
+                    const Text(
                       'CarsSelect',
                       style: TextStyle(
                         fontSize: 38,
@@ -94,7 +94,7 @@ class _SplashScreenState extends State<SplashScreen>
                     const SizedBox(height: 10),
 
                     // Sous-titre
-                    Text(
+                    const Text(
                       'MARQUES EUROPÉENNES',
                       style: TextStyle(
                       
@@ -135,7 +135,7 @@ class _SplashScreenState extends State<SplashScreen>
               bottom: 32,
               child: FadeTransition(
                 opacity: _fadeAnim,
-                child: Text(
+                child: const Text(
                   '65 MARQUES RÉFÉRENCÉES',
                   style: TextStyle(
                     fontSize: 10,

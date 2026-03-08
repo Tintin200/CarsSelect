@@ -94,7 +94,7 @@ class _FranceState extends State<France> {
                   // ── Liste des marques ──
                   Container(
                     margin: const EdgeInsets.symmetric(horizontal: 24),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       border: Border(
                         top: BorderSide(color: _divider),
                       ),
